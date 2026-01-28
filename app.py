@@ -1,4 +1,4 @@
-# Energia & CO₂ Audit – V9 (adaptív, anonim, admin statisztika, PDF)
+# Energia & CO₂ Audit – 12 (adaptív, anonim, admin statisztika, PDF)
 # Futás: streamlit run app.py
 # Opcionális:
 #  - ADMIN_PASSWORD (Streamlit Secrets / env)
@@ -21,7 +21,7 @@ from reportlab.pdfgen import canvas
 
 st.set_page_config(page_title="Energia & CO₂ Audit (V9)", page_icon="🏠", layout="wide")
 
-APP_VERSION = "V9.0"
+APP_VERSION = "V12"
 DEFAULT_GRID_CO2_KG_PER_KWH = 0.23   # irányadó, pilot
 DEFAULT_GAS_CO2_KG_PER_KWH  = 0.202  # irányadó, pilot
 
