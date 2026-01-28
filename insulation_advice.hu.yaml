@@ -1,0 +1,35 @@
+version: 0.2
+u_thresholds:
+  pass: 0.17
+  borderline: 0.20
+
+attic_advice:
+  pass:
+    headline: "✅ Megfelel (jó eséllyel pályázati követelmény alatt)"
+    bullets:
+      - "A becsült U-érték a határ alatt van."
+      - "Tartsd meg a vastagságot folytonosan, ne maradjanak hézagok."
+      - "Kémény körül tűztávolságot tarts be; nem éghető anyag előny."
+  borderline:
+    headline: "⚠️ Határeset (inkább növeld a vastagságot)"
+    bullets:
+      - "Papíron közel lehet a határhoz, de a kivitelezési veszteségek rontanak."
+      - "Javaslat: válassz nagyobb vastagságot vagy jobb λ értékű anyagot."
+  fail:
+    headline: "❌ Nem felel meg (vékony/gyenge anyag)"
+    bullets:
+      - "Növeld a vastagságot (pl. 25–30 cm), vagy válts jobb hővezetésű anyagra."
+      - "Figyelj a villanyvezetékekre, spotlámpákra és a szellőzésre."
+materials:
+  mineral_wool_039:
+    label: "Ásványgyapot (λ = 0,039 W/mK)"
+    lambda: 0.039
+  mineral_wool_035:
+    label: "Jobb ásványgyapot (λ = 0,035 W/mK)"
+    lambda: 0.035
+  cellulose_040:
+    label: "Cellulóz (λ = 0,040 W/mK)"
+    lambda: 0.040
+  eps_038:
+    label: "EPS (λ = 0,038 W/mK)"
+    lambda: 0.038

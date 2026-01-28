@@ -1,0 +1,41 @@
+version: 0.2
+notes: >
+  Ezek rövid, közérthető tájékoztató kártyák. Nem minősül hivatalos pályázati kiírásnak.
+  A konkrét feltételeket mindig az aktuális programleírás alapján kell ellenőrizni.
+
+program_cards:
+  attic_free_style:
+    title: "Padlásfödém szigetelés (támogatott / kedvezményes konstrukciók – mintakártya)"
+    why_supported: "Az állam/EU és energiaszolgáltatói ösztönzők energia-megtakarítást finanszíroznak, ezért lehet alacsony önerő vagy akár 0 Ft a kivitelezés bizonyos esetekben."
+    for_whom:
+      - "Régebbi családi ház, ahol a padlásfödém szigetelése hiányos"
+      - "Jelentős fűtési energiafelhasználás"
+    watch_out:
+      - "Kémény körül tűztávolság, nem éghető anyag előny"
+      - "Vezetékek/spotlámpák – ne nyomd össze a szigetelést, ne takard el a hőtermelő elemeket"
+      - "Pára/páratechnika: páraáteresztés és szellőzés"
+    typical_materials:
+      - "Ásványgyapot (kőzet/üveggyapot) 20–30 cm"
+      - "Fújt cellulóz (helyszíntől függően)"
+    execution_steps:
+      - "Előzetes felmérés (padlás hozzáférés, állapot, vastagság)"
+      - "Ajánlat / szerződés / időpont egyeztetés"
+      - "Kivitelezés (gyakran 1 nap), vastagság beállítása"
+      - "Dokumentálás (fotók), átadás-átvétel"
+    pitfalls:
+      - "Ha már van jó szigetelés, nem biztos hogy elszámolható a megtakarítás"
+      - "Tárolás/járhatóság: lehet járófelületet kell kialakítani"
+      - "Későbbi támogatásokkal való összevonhatóság: egyes elemekre nem mindig lehet duplán támogatást kérni"
+
+measure_details:
+  attic_insulation:
+    card_ref: "attic_free_style"
+    short: "Padlásfödém szigetelés jellemzően 20–30 cm ásványgyapottal; cél U ≤ 0,17 W/m²K."
+  window_upgrade:
+    short: "Nyílászáró csere: légzárás + üveg U + beépítési minőség számít. Hőhíd és párakockázat kezelése fontos."
+  heat_pump:
+    short: "Hőszivattyú: jó szigetelés + alacsony előremenő hőmérséklet (padlófűtés) mellett a leghatékonyabb."
+  dhw_optimization:
+    short: "HMV optimalizálás: hőfok, cirkuláció időzítés, zuhany/perlátor; gyors megtérülésű lépések."
+  pump_control:
+    short: "Keringető szivattyú vezérlés: nyári leállítás + igény szerinti működés; felesleges alapfogyasztás csökkentése."

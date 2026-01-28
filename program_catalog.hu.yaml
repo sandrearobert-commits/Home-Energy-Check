@@ -1,0 +1,124 @@
+version: 0.2
+notes: >
+  Előszűrő katalógus – közérthető tájékoztatás. A tényleges jogosultságot és feltételeket mindig a hivatalos kiírások alapján kell ellenőrizni.
+  A mezők célja: a program által tipikusan kért dokumentumok és szakember-igény jelzése.
+
+programs:
+  ekr_attic:
+    title: "EKR – padlásfödém szigetelés (gyakran 0 Ft / kedvezményes)"
+    why: "Energiamegtakarítási igazolások / kötelezettségi rendszer finanszírozása miatt bizonyos esetekben alacsony vagy 0 Ft-os lehet a kivitelezés."
+    typical_measures: ["attic_insulation"]
+    eligibility_hints:
+      - "Hiányos/gyenge padlásfödém-szigetelés"
+      - "Hozzáférhető padlás/födém"
+    watch_out:
+      - "Kémény körül tűztávolság, villanyvezetékek, spotlámpák"
+      - "Fotódokumentáció és helyszíni felmérés jellemző"
+    requirements:
+      invoice_required: false
+      pro_required:
+        - "helyszíni felmérő / kivitelező csapat"
+      docs_typical:
+        - "fotók (előtte/utána)"
+        - "műszaki adatlap / anyagvastagság igazolása"
+      audit_or_certificate:
+        required: false
+        note: "Programtól függően műszaki dokumentáció kérhető, de nem klasszikus energetikai tanúsítvány."
+      execution_notes:
+        - "Padlás tárolás/járhatóság egyeztetendő"
+        - "Szigetelés folytonossága és vastagsága kritikus"
+
+  rural_home_reno:
+    title: "Otthonfelújítás (3+3 jellegű) – mintakártya"
+    why: "Központi támogatási konstrukció, általában számlás kivitelezéssel és utólagos elszámolással."
+    typical_measures: ["attic_insulation","window_upgrade","dhw_optimization","pump_control","heat_pump"]
+    eligibility_hints:
+      - "Gyakran kistelepülés / célcsoport / jogosultsági feltételek a kiírás szerint"
+      - "Több intézkedés kombinálása tipikusan megengedett"
+    watch_out:
+      - "Határidők, jogosultsági kör és települési lista a kiírás szerint változhat"
+    requirements:
+      invoice_required: true
+      pro_required:
+        - "számlás kivitelező"
+        - "esetenként tervező/energetikus (munkától függ)"
+      docs_typical:
+        - "számlák, teljesítésigazolás"
+        - "fotók (előtte/utána)"
+        - "jogosultság igazolások (programfüggő)"
+      audit_or_certificate:
+        required: false
+        note: "Egyes konstrukciókban jellegétől függően energiaigazolás/nyilatkozat kérhető."
+      execution_notes:
+        - "Részletes költségvetés és szerződés fontos"
+        - "Minőségi beépítés: légzárás/páratechnika"
+
+  heating_modernization:
+    title: "Fűtéskorszerűsítés támogatás (mintakártya)"
+    why: "A fűtési rendszer hatásfokának javítása (kazáncsere, szabályozás, hőleadók) mérhető energiamegtakarítást ad."
+    typical_measures: ["pump_control","dhw_optimization","heat_pump"]
+    eligibility_hints:
+      - "Régi kazán / gyenge szabályozás"
+      - "Magas fűtési fogyasztás"
+    watch_out:
+      - "Hőszivattyúhoz alacsony előremenő (padlófűtés) és jó szigetelés előny"
+    requirements:
+      invoice_required: true
+      pro_required:
+        - "gépész kivitelező"
+        - "villanyszerelő (ha szükséges)"
+      docs_typical:
+        - "számlák, műszaki átadás"
+        - "garanciajegy, beüzemelési jegyzőkönyv"
+      audit_or_certificate:
+        required: false
+        note: "Komplexebb rendszereknél tervezés/engedélyezés is felmerülhet."
+      execution_notes:
+        - "Szabályozás (időjáráskövető, zónázás) gyakran nagyot dob kis költséggel"
+
+  heat_pump_program:
+    title: "Hőszivattyú program (mintakártya)"
+    why: "Elektrifikáció + magas hatásfok (COP/SCOP) csökkentheti a gázfogyasztást és a CO₂-t."
+    typical_measures: ["heat_pump"]
+    eligibility_hints:
+      - "Közepes/jó szigetelés (vagy tervezett szigetelés)"
+      - "Alacsony hőmérsékletű hőleadás (padlófűtés) előny"
+    watch_out:
+      - "Elektromos csatlakozás, teljesítménybővítés"
+      - "Zaj és elhelyezés (kültéri egység)"
+    requirements:
+      invoice_required: true
+      pro_required:
+        - "minősített hőszivattyú kivitelező"
+        - "villanyszerelő / regisztrált szerelő (ha szükséges)"
+      docs_typical:
+        - "számla, beüzemelés, garancia"
+        - "műszaki terv/nyilatkozat (programfüggő)"
+      audit_or_certificate:
+        required: false
+        note: "Egyes programok kérhetnek energetikai számítást, ezt a kiírás határozza meg."
+      execution_notes:
+        - "Először hőigény csökkentés (szigetelés) → utána gépészet: jobb méretezés"
+
+  pv_program:
+    title: "Napelem (HMKE) támogatás / finanszírozás (mintakártya)"
+    why: "Villamos energia termelésével csökkenthető a hálózati vételezés és részben a fűtés villamosítása is támogatható."
+    typical_measures: ["pv"]
+    eligibility_hints:
+      - "Megfelelő tető tájolás/árnyékolás"
+      - "Villamos fogyasztás jelentős"
+    watch_out:
+      - "Hálózati csatlakozás, engedélyezés, elszámolás szabályai programfüggők"
+    requirements:
+      invoice_required: true
+      pro_required:
+        - "napelemes kivitelező"
+        - "regisztrált villanyszerelő"
+      docs_typical:
+        - "csatlakozási dokumentumok, engedélyek (programfüggő)"
+        - "számla, műszaki átadás"
+      audit_or_certificate:
+        required: false
+        note: "Nem audit, inkább hálózati és műszaki dokumentáció."
+      execution_notes:
+        - "Ha hőszivattyú is tervben, célszerű együtt gondolni (méretezés, bővítés)"
