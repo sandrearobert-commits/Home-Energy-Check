@@ -19,7 +19,7 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
 from reportlab.pdfgen import canvas
 
-st.set_page_config(page_title="Energia & CO₂ Audit (V9)", page_icon="🏠", layout="wide")
+st.set_page_config(page_title="Energia & CO₂ Audit (V12)", page_icon="🏠", layout="wide")
 
 APP_VERSION = "V12"
 DEFAULT_GRID_CO2_KG_PER_KWH = 0.23   # irányadó, pilot
