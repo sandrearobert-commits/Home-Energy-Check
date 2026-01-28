@@ -1,0 +1,41 @@
+version: 0.1
+currency: HUF
+measures:
+  pump_control:
+    name: "Padlófűtés szivattyú vezérlés (hőkapcsoló / relé)"
+    grant_type: "fixed"
+    grant_max_huf: 0
+  dhw_optimization:
+    name: "HMV optimalizálás (cirkuláció időzítés, hőfok, perlátor, zuhanyfej)"
+    grant_type: "fixed"
+    grant_max_huf: 30000
+  attic_insulation:
+    name: "Födém/padlás szigetelés"
+    grant_type: "percent"
+    grant_percent: 0.5
+    grant_max_huf: 400000
+    conditions:
+      - field: "attic_insulated"
+        op: "=="
+        value: false
+  window_upgrade:
+    name: "Nyílászáró csere"
+    grant_type: "percent"
+    grant_percent: 0.4
+    grant_max_huf: 500000
+    conditions:
+      - field: "windows_quality"
+        op: "in"
+        value: ["régi", "vegyes"]
+  heat_pump:
+    name: "Hőszivattyúra váltás (fűtés)"
+    grant_type: "percent"
+    grant_percent: 0.45
+    grant_max_huf: 2000000
+    conditions:
+      - field: "heating_type"
+        op: "in"
+        value: ["kombi gázkazán", "kondenzációs gázkazán", "régi gázkazán"]
+      - field: "insulation_level"
+        op: "in"
+        value: ["közepes", "jó"]
